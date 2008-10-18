@@ -1,0 +1,8 @@
+# Authors
+gibson:
+  id: 1
+  name: William Gibson
+
+peter:
+  id: 2
+  name: Peter Kropotkin

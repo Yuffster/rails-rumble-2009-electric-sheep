@@ -1,5 +1,6 @@
 # Citations
 one:
+  id: 1
   bibliography_id: 1
   title: MyString
   publication_title: MyString
@@ -17,6 +18,7 @@ one:
   notes: MyText
 
 two:
+  id: 2
   bibliography_id: 2
   title: MyString
   publication_title: MyString
