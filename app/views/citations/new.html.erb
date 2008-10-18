@@ -1,0 +1,71 @@
+<h1>New citation</h1>
+
+<% form_for(@citation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bibliography_id %><br />
+    <%= f.text_field :bibliography_id %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :publication_title %><br />
+    <%= f.text_field :publication_title %>
+  </p>
+  <p>
+    <%= f.label :editor %><br />
+    <%= f.text_field :editor %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </p>
+  <p>
+    <%= f.label :publisher %><br />
+    <%= f.text_field :publisher %>
+  </p>
+  <p>
+    <%= f.label :publishing_city %><br />
+    <%= f.text_field :publishing_city %>
+  </p>
+  <p>
+    <%= f.label :pages %><br />
+    <%= f.text_field :pages %>
+  </p>
+  <p>
+    <%= f.label :imported_from %><br />
+    <%= f.text_field :imported_from %>
+  </p>
+  <p>
+    <%= f.label :imported_at %><br />
+    <%= f.datetime_select :imported_at %>
+  </p>
+  <p>
+    <%= f.label :volume %><br />
+    <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.label :issue %><br />
+    <%= f.text_field :issue %>
+  </p>
+  <p>
+    <%= f.label :tags %><br />
+    <%= f.text_field :tags %>
+  </p>
+  <p>
+    <%= f.label :reference_medium %><br />
+    <%= f.text_field :reference_medium %>
+  </p>
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', citations_path %>

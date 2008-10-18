@@ -1,0 +1,48 @@
+<h1>Listing citations</h1>
+
+<table>
+  <tr>
+    <th>Bibliography</th>
+    <th>Title</th>
+    <th>Publication title</th>
+    <th>Editor</th>
+    <th>Date</th>
+    <th>Publisher</th>
+    <th>Publishing city</th>
+    <th>Pages</th>
+    <th>Imported from</th>
+    <th>Imported at</th>
+    <th>Volume</th>
+    <th>Issue</th>
+    <th>Tags</th>
+    <th>Reference medium</th>
+    <th>Notes</th>
+  </tr>
+
+<% for citation in @citations %>
+  <tr>
+    <td><%=h citation.bibliography_id %></td>
+    <td><%=h citation.title %></td>
+    <td><%=h citation.publication_title %></td>
+    <td><%=h citation.editor %></td>
+    <td><%=h citation.date %></td>
+    <td><%=h citation.publisher %></td>
+    <td><%=h citation.publishing_city %></td>
+    <td><%=h citation.pages %></td>
+    <td><%=h citation.imported_from %></td>
+    <td><%=h citation.imported_at %></td>
+    <td><%=h citation.volume %></td>
+    <td><%=h citation.issue %></td>
+    <td><%=h citation.tags %></td>
+    <td><%=h citation.reference_medium %></td>
+    <td><%=h citation.notes %></td>
+    <td><%= link_to 'Show', citation %></td>
+    <td><%= link_to 'Edit', edit_citation_path(citation) %></td>
+    <td><%= link_to 'Destroy', citation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New citation', new_citation_path %>

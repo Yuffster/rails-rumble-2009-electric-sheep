@@ -1,0 +1,78 @@
+<p>
+  <b>Bibliography:</b>
+  <%=h @citation.bibliography_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @citation.title %>
+</p>
+
+<p>
+  <b>Publication title:</b>
+  <%=h @citation.publication_title %>
+</p>
+
+<p>
+  <b>Editor:</b>
+  <%=h @citation.editor %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @citation.date %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%=h @citation.publisher %>
+</p>
+
+<p>
+  <b>Publishing city:</b>
+  <%=h @citation.publishing_city %>
+</p>
+
+<p>
+  <b>Pages:</b>
+  <%=h @citation.pages %>
+</p>
+
+<p>
+  <b>Imported from:</b>
+  <%=h @citation.imported_from %>
+</p>
+
+<p>
+  <b>Imported at:</b>
+  <%=h @citation.imported_at %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%=h @citation.volume %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%=h @citation.issue %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%=h @citation.tags %>
+</p>
+
+<p>
+  <b>Reference medium:</b>
+  <%=h @citation.reference_medium %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @citation.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_citation_path(@citation) %> |
+<%= link_to 'Back', citations_path %>

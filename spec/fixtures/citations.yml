@@ -1,0 +1,34 @@
+# Citations
+one:
+  bibliography_id: 1
+  title: MyString
+  publication_title: MyString
+  editor: MyString
+  date: 2008-10-17 20:41:36
+  publisher: MyString
+  publishing_city: MyString
+  pages: MyString
+  imported_from: MyString
+  imported_at: 2008-10-17 20:41:36
+  volume: 1
+  issue: 1
+  tags: MyString
+  reference_medium: MyString
+  notes: MyText
+
+two:
+  bibliography_id: 2
+  title: MyString
+  publication_title: MyString
+  editor: MyString
+  date: 2008-10-17 20:41:36
+  publisher: MyString
+  publishing_city: MyString
+  pages: MyString
+  imported_from: MyString
+  imported_at: 2008-10-17 20:41:36
+  volume: 1
+  issue: 1
+  tags: MyString
+  reference_medium: MyString
+  notes: MyText

@@ -1,3 +1,6 @@
+# TODO: Login protection is needed here.
+# TODO: Should only allow User to edit their own Bibliographies.
+# TODO: Namespace this with the User routes.
 class BibliographiesController < ApplicationController
   # GET /bibliographies
   # GET /bibliographies.xml

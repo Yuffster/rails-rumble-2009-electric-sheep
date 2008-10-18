@@ -9,11 +9,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081018012426) do
+ActiveRecord::Schema.define(:version => 20081018014136) do
 
   create_table "bibliographies", :force => true do |t|
     t.integer  "user_id"
     t.integer  "style_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "citations", :force => true do |t|
+    t.integer  "bibliography_id"
+    t.string   "title"
+    t.string   "publication_title"
+    t.string   "editor"
+    t.datetime "date"
+    t.string   "publisher"
+    t.string   "publishing_city"
+    t.string   "pages"
+    t.string   "imported_from"
+    t.datetime "imported_at"
+    t.integer  "volume"
+    t.integer  "issue"
+    t.string   "tags"
+    t.string   "reference_medium"
+    t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
