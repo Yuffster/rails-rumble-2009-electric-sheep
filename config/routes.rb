@@ -1,4 +1,6 @@
-ActionController::Routing::Routes.draw do |map| 
+ActionController::Routing::Routes.draw do |map|
+  map.resources :bibliographies
+
   # Restful Authentication Rewrites
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -9,12 +11,12 @@ ActionController::Routing::Routes.draw do |map|
   map.change_password '/change_password/:reset_code', :controller => 'passwords', :action => 'reset'
   map.open_id_complete '/opensession', :controller => "sessions", :action => "create", :requirements => { :method => :get }
   map.open_id_create '/opencreate', :controller => "users", :action => "create", :requirements => { :method => :get }
-  
+
   # Restful Authentication Resources
   map.resources :users
   map.resources :passwords
   map.resource :session
-  
+
   # Home Page
   map.root :controller => 'sessions', :action => 'new'
 

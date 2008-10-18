@@ -1,0 +1,13 @@
+<p>
+  <b>User:</b>
+  <%=h @bibliography.user_id %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%=h @bibliography.style_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bibliography_path(@bibliography) %> |
+<%= link_to 'Back', bibliographies_path %>

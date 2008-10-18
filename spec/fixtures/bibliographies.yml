@@ -1,0 +1,8 @@
+# Bibliographies.
+one:
+  user_id: 1
+  style_id: 1
+
+two:
+  user_id: 2
+  style_id: 1

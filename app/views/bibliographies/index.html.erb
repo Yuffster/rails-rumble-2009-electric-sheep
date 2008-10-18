@@ -1,0 +1,22 @@
+<h1>Listing bibliographies</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Style</th>
+  </tr>
+
+<% for bibliography in @bibliographies %>
+  <tr>
+    <td><%=h bibliography.user_id %></td>
+    <td><%=h bibliography.style_id %></td>
+    <td><%= link_to 'Show', bibliography %></td>
+    <td><%= link_to 'Edit', edit_bibliography_path(bibliography) %></td>
+    <td><%= link_to 'Destroy', bibliography, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bibliography', new_bibliography_path %>
