@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :bibliographies
+  map.resources :styles
 
   # Restful Authentication Rewrites
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

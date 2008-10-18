@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @style.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @style.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_style_path(@style) %> |
+<%= link_to 'Back', styles_path %>

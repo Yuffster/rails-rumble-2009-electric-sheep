@@ -1,0 +1,10 @@
+# Bibliography styles.
+apa:
+  id: 1
+  name: APA
+  description: American Psychological Association
+
+mla:
+  id: 2
+  name: MLA
+  description: Modern Language Association of America
